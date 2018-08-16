@@ -47,3 +47,24 @@ void MainWindow::on_pushButton_pressed()
 {
     MainWindow::on_pushButton_clicked();
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    c = a - b;
+    ui->lineEdit_5->setText(c.get());
+    ui->lineEdit->setFocus();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    c = a * b;
+    ui->lineEdit_5->setText(c.get());
+    ui->lineEdit->setFocus();
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    c = a / b;
+    ui->lineEdit_5->setText(c.get());
+    ui->lineEdit->setFocus();
+}

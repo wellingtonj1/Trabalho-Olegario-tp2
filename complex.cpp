@@ -20,17 +20,21 @@ QString Complex::get(){
     return ss;
 }
 
-Complex Complex::operator + (Complex & number) const{
-    Complex num;
-    num.set(number.real+this->real, number.imaginary+this->imaginary);
-    return num;
-}
-
-Complex Complex::operator + (Complex & number) const{
-
-
-}
 void Complex::operator = (const Complex & number){
     this->real= number.real;
     this->imaginary=number.imaginary;
 }
+
+Complex Complex::operator + (Complex & number) const{
+    Complex num;
+    num.set();
+    return num;
+}
+
+Complex Complex::operator - (Complex & number) const{
+    Complex num;
+    num.set();
+    return num;
+}
+
+
