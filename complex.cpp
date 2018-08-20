@@ -27,13 +27,13 @@ void Complex::operator = (const Complex & number){
 
 Complex Complex::operator + (Complex & number) const{
     Complex num;
-    num.set(number.real+this->real, number.imaginary+this->imaginary);
+    num.set(number.real+this->real, number.imaginary+this->imaginary);//(a+bi)+(c+di) = (a+c)+(b+d)i
     return num;
 }
 
 Complex Complex::operator - (Complex & number) const{
     Complex num;
-    num.set(number.real-this->real, number.imaginary-this->imaginary);
+    num.set(number.real-this->real, number.imaginary-this->imaginary);//(a+bi)−(c+di)=(a−c)+(b−d)i;
     return num;
 }
 
